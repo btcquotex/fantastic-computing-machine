@@ -1,0 +1,20 @@
+# Exported from Render on 2024-11-30T18:31:29Z
+services:
+- type: web
+  name: fantastic-computing-machine
+  runtime: static
+  repo: https://github.com/btcquotex/fantastic-computing-machine
+  envVars:
+  - key: Blockonomics-bitcoin-payments.3.7
+    sync: false
+  - key: Secret_Key
+    sync: false
+  - key: API_KEY
+    sync: false
+  buildCommand: gitnore
+  staticPublishPath: license
+  buildFilter:
+    paths:
+    - api
+  rootDir: github
+version: "1"
