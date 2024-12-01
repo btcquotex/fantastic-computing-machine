@@ -1,20 +1,17 @@
-# Exported from Render on 2024-11-30T18:31:29Z
+# Exported from Render on 2024-12-01T08:47:14Z
 services:
 - type: web
-  name: fantastic-computing-machine
-  runtime: static
-  repo: https://github.com/btcquotex/fantastic-computing-machine
+  name: Facebook_hack
+  runtime: python
+  repo: https://github.com/btcquotex/Facebook-Exploit-Python-
+  plan: free
   envVars:
-  - key: Blockonomics-bitcoin-payments.3.7
-    sync: false
-  - key: Secret_Key
-    sync: false
   - key: API_KEY
     sync: false
-  buildCommand: gitnore
-  staticPublishPath: license
-  buildFilter:
-    paths:
-    - api
-  rootDir: github
+  region: oregon
+  buildCommand: pip install - update-pip
+  startCommand: pkg install wget
+  healthCheckPath: /systems/14246533394/events?focus=1799754782806806553&selected=1799754782806806553
+  previews:
+    generation: automatic
 version: "1"
